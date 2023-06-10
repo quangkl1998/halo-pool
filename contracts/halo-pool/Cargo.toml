@@ -1,0 +1,41 @@
+[package]
+name          = "halo-pool"
+authors       = ["Aura network"]
+version       = "1.0.0"
+edition       = "2021"
+license       = "MIT"
+repository    = "https://github.com/halotrade-zone/halo-farm"
+homepage      = "https://halotrade.zone/"
+rust-version  = "1.63"
+
+exclude = [
+  "contract.wasm",
+  "hash.txt",
+]
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[features]
+# for more explicit tests, cargo test --features=backtraces
+backtraces = ["cosmwasm-std/backtraces"]
+# use library feature to disable all instantiate/execute/query exports
+library = []
+
+[dependencies]
+cw-utils          = "1.0.0"
+cw-storage-plus   = "1.0.0"
+cw2               = "1.0.0"
+cw20              = { version = "1.0.0" }
+cosmwasm-schema   = "1.1.8"
+cosmwasm-std      = "1.1.8"
+cosmwasm-storage  = "1.1.8"
+getrandom         = {version = "0.2.8", default-features = false, features = ["js"]}
+schemars          = "0.8.11"
+serde             = { version = "1.0.137", default-features = false, features = ["derive"] }
+thiserror         = { version = "1.0.37" }
+
+[dev-dependencies]
+cw-multi-test     = "0.16.1"
+cosmwasm-schema   = { version = "1.1.8" }
+cosmwasm-storage  = { version = "1.1.8" }
