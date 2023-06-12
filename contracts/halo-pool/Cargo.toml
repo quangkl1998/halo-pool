@@ -1,12 +1,12 @@
 [package]
 name          = "halo-pool"
-authors       = ["Aura network"]
+authors       = ["Quang Nguyen"]
 version       = "1.0.0"
 edition       = "2021"
 license       = "MIT"
 repository    = "https://github.com/halotrade-zone/halo-farm"
 homepage      = "https://halotrade.zone/"
-rust-version  = "1.63"
+rust-version  = "1.66"
 
 exclude = [
   "contract.wasm",
