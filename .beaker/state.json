@@ -2,7 +2,9 @@
   "euphoria": {
     "halo_pool": {
       "code_id": 948,
-      "addresses": {},
+      "addresses": {
+        "default": "aura16zeqz7ku6jj7ul2xlwru5rnw994wpuuv4p5vwr5dxmn44vwccv3s759y24"
+      },
       "proposal": {
         "store_code": null
       }

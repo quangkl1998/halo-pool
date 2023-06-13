@@ -1,4 +1,4 @@
-name = "cw20-dapp"
+name = "halo_pool"
 gas_price = '0.025ueaura'
 gas_adjustment = 1.3
 account_prefix = 'aura'

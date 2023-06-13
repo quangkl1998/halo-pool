@@ -6,7 +6,7 @@ edition       = "2021"
 license       = "MIT"
 repository    = "https://github.com/halotrade-zone/halo-farm"
 homepage      = "https://halotrade.zone/"
-rust-version  = "1.66"
+rust-version  = "1.63"
 
 exclude = [
   "contract.wasm",
